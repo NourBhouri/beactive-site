@@ -4,7 +4,7 @@ import Testimonial from "./Testimonial";
 
 export default function Testimonials() {
   return (
-    <div className="row w-100 px-5">
+    <div className="row w-100 ">
       <Testimonial
         title="Anna"
         review={"Thank you, you changed my life!!!!"}

@@ -1,30 +1,27 @@
+/* eslint-disable react/prop-types */
 import Carousel from "react-bootstrap/Carousel";
-import lose from "./images/lose.jpg";
-import built from "./images/built.jpg";
-import builtLose from "./images/lose+built.jpg";
-import Button from "react-bootstrap/Button";
 
 const CustomCarousel = () => {
   return (
     <Carousel>
       <Carousel.Item>
-        <ExampleCarouselImage text="First slide" />
+        <CarouselImage image="/images/lose+built.jpg" />
         <Carousel.Caption>
-          <h3>First slide label</h3>
+          <h1>Lose </h1>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <ExampleCarouselImage text="Second slide" />
+        <CarouselImage image="/images/built.jpg" />
         <Carousel.Caption>
-          <h3>Second slide label</h3>
+          <h1>Second slide label</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <ExampleCarouselImage text="Third slide" />
+        <CarouselImage image="/images/lose.jpg" />
         <Carousel.Caption>
-          <h3>Third slide label</h3>
+          <h1>Third slide label</h1>
           <p>
             Praesent commodo cursus magna, vel scelerisque nisl consectetur.
           </p>
@@ -36,7 +33,7 @@ const CustomCarousel = () => {
 
 export default CustomCarousel;
 
-function ExampleCarouselImage() {
+function CarouselImage(props) {
   return (
     <div
       style={{
@@ -49,7 +46,7 @@ function ExampleCarouselImage() {
           objectFit: "cover",
           height: "100vh",
         }}
-        src="https://images.pexels.com/photos/1199607/pexels-photo-1199607.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        src={props.image}
       ></img>
       <div
         style={{
