@@ -6,26 +6,49 @@ const CustomCarousel = () => {
     <Carousel>
       <Carousel.Item>
         <CarouselImage image="/images/lose+built.jpg" />
-        <Carousel.Caption>
-          <h1>Lose </h1>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </Carousel.Caption>
+        <p>
+          <a
+            className="btn btn-lg btn-dark"
+            style={{
+              position: "absolute",
+              left: "46%",
+              top: "85%",
+            }}
+            href="./login"
+          >
+            Start Now
+          </a>
+        </p>
       </Carousel.Item>
       <Carousel.Item>
         <CarouselImage image="/images/built.jpg" />
-        <Carousel.Caption>
-          <h1>Second slide label</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
+        <p>
+          <a
+            className="btn btn-lg btn-dark"
+            style={{
+              position: "absolute",
+              left: "46%",
+              top: "85%",
+            }}
+          >
+            Start Now
+          </a>
+        </p>
       </Carousel.Item>
       <Carousel.Item>
         <CarouselImage image="/images/lose.jpg" />
-        <Carousel.Caption>
-          <h1>Third slide label</h1>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
+        <p>
+          <a
+            className="btn btn-lg btn-dark"
+            style={{
+              position: "absolute",
+              left: "46%",
+              top: "85%",
+            }}
+          >
+            Start Now
+          </a>
+        </p>
       </Carousel.Item>
     </Carousel>
   );

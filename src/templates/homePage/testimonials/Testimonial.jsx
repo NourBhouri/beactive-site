@@ -1,6 +1,8 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/no-unescaped-entities */
 
+import { Button } from "react-bootstrap";
+
 export default function Testimonial(props) {
   return (
     <div className="col-lg-4 py-4">
@@ -14,11 +16,11 @@ export default function Testimonial(props) {
       >
         <div>
           <img
-            className="bd-placeholder-img rounded-circle"
+            className="bd-placeholder-img rounded-circle "
             src={props.image}
             style={{
-              width: 100,
-              height: 100,
+              width: 150,
+              height: 150,
             }}
           ></img>
         </div>
@@ -28,9 +30,9 @@ export default function Testimonial(props) {
         </div>
       </div>
       <p>
-        <a className="btn btn-secondary" href="#">
+        <Button className="btn btn-secondary" href={props.img}>
           View details »
-        </a>
+        </Button>
       </p>
     </div>
   );
